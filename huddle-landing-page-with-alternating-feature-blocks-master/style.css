@@ -239,10 +239,13 @@ footer{
 
     .top button{
         width: 10%;
-        height: 35px;
+        height: 50px;
+        border-radius: 40px;
         margin-top: 30px;
         font-size: 0.9rem;
         font-family: 'Open Sans';
+        margin-right: 60px;
+        
     }
 
     .top img{
