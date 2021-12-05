@@ -54,6 +54,7 @@ body{
     font-weight: 600;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.089);
     width: 35%;
+    cursor: pointer;
 }
 
 h1{
@@ -78,6 +79,11 @@ h1{
     border-radius: 20px;
     margin-bottom: 5em;
     height: 40px;
+}
+
+.button_pink:hover{
+    background-color:hsla(322, 100%, 66%, 0.534);
+    cursor: pointer;
 }
 
 .section_2 div{
@@ -196,6 +202,12 @@ footer{
 .social_icon{
     filter: invert(100%) brightness(3);
     width: 20px;
+    cursor: pointer;
+}
+
+.social_icon:hover{
+    filter: saturate(30%) invert(20%);
+    
 }
 
 .footer_3{
