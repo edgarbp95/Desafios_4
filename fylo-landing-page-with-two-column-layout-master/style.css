@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+/* ### Primary */
+--Very-Dark-Blue: hsl(243, 87%, 12%);
+--Desaturated-Blue: hsl(238, 22%, 44%);
+
+/* ### Accent */
+--Bright-Blue: hsl(224, 93%, 58%);
+--Moderate-Cyan: hsl(170, 45%, 43%);
+
+/* ### Neutral */
+--Light-Grayish-Blue: hsl(240, 75%, 98%);
+--Light-Gray: hsl(0, 0%, 75%);
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+nav img{
+    height: 20px;
+}
+
+nav{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 4em;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 2em;
+    font-size: 0.8rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.section_1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 7em;
+}
+
+.section_1 img{
+    width: 300px;
+    margin-bottom: 40px;
+}
+
+.section_1 h1{
+    font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.section_1 p{
+    font-size: 0.8rem;
+    line-height: 20px;
+    width: 94%;
+    margin: 0 auto;
+}
+
+.section_1 input{
+    width: 95%;
+    height: 35px;
+    margin-bottom: 1em;
+    border-radius: 13x;
+    padding-left: 0.5em;
+}
+
+.section_1_text{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.section_1 button{
+    width: 95%;
+    height: 35px;
+    background-color: var(--Bright-Blue);
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 3px;
+}
+
+.section_2 img{
+    width: 340px;
+    margin-bottom:60px;
+}
+
+.section_2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.section_2 h2{
+    font-size: 1rem;
+    margin: 0 auto;
+    
+}
+
+.section_2 p{
+    font-size: 0.8rem;
+    color: var(--Desaturated-Blue);
+}
+
+.section_2_text{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.section_2 span{
+    color: var(--Moderate-Cyan);
+}
+
+.text_green img{
+    width: 15px;
+    margin-bottom: -3px;
+    margin-left: 5px;
+}
+
+.text_green{
+    border-bottom: 1px solid var(--Moderate-Cyan);
+    width: 42%;
+    margin: 0 auto;
+}
+
+.section_2_review img{
+    width: 15px;
+    margin-bottom: 5px;
+}
+
+.section_2_review{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.267);
+    padding: 1em;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 3em;
+}
+
+.section_2_review p{
+    font-size: 0.7rem;
+}
+
+.section_2_avatar img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.section_2_avatar{
+    display: flex;
+    padding-top: 1em;
+    gap: 0.5em;
+}
+
+.section_2_avatar_text h4{
+    font-size: 0.8rem;
+}
+
+.section_2_avatar_text p{
+    font-size: 0.6rem;
+}
+
+.section_3{
+    /* margin-left: 30px;
+    margin-right: 30px; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: hsla(240, 22%, 44%, 0.897);
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.section_3 h3{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.section_3 p{
+    color: white;
+    font-size: 0.8rem;
+    margin-left: 30px;
+    margin-right: 30px;
+    line-height: 20px;
+    padding-top: 1em;
+}
+
+
+.section_3 input{
+    width: 70%;
+    height: 35px;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    border-radius: 13x;
+    padding-left: 0.5em;
+}
+
+::placeholder{
+    color: var(--Light-Gray);
+}
+
+.section_3 button{
+    width: 70%;
+    height: 35px;
+    background-color: var(--Bright-Blue);
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 3px;
+}
+
+.section_4{
+    background-color: var(--Very-Dark-Blue);
+    color: white;
+    padding: 2em;
+}
+
+.img_logo_footer{
+    filter: saturate(0) invert(100) brightness(5);
+    height: 40px;
+}
