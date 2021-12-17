@@ -6,6 +6,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> 
   <title>Frontend Mentor | FAQ Accordion Card</title>
   <link rel="stylesheet" href="./style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 
@@ -24,67 +25,67 @@
         <ul class="lista_1">
           <!-- primer elemento -->
           <li>
-            <div class="lista_1_texto_visible">
-              <p class="primer_parrafo">How many team members can I invite?</p>
-              <img class="flechita" src="./images/icon-arrow-down.svg" alt="flechita">
+            <div id="elemento1" class="lista_1_texto_visible">
+              <p id="parrafo1" class="primer_parrafo">How many team members can I invite?</p>
+              <img id="flechita" class="flechita " src="./images/icon-arrow-down.svg" alt="flechita">
           </div>
-            <div class="texto_oculto">
+            <div class="texto_oculto texto_oculto1">
               <p>You can invite up to 2 additional users on the Free plan. There is no limit on 
                 team members for the Premium plan.</p> 
             </div>
           </li>
           <!-- segundo elemento -->
           <li>
-            <div class="lista_1_texto_visible">
-              <p class="primer_parrafo">
+            <div id="elemento2" class="lista_1_texto_visible">
+              <p id="parrafo2" class="primer_parrafo">
                 What is the maximum file upload size?
               </p>
-              <img class="flechita" src="./images/icon-arrow-down.svg" alt="flechita">
+              <img id="flechita2" class="flechita flecha" src="./images/icon-arrow-down.svg" alt="flechita">
             </div>
             
             
-            <div class="texto_oculto">
+            <div class="texto_oculto texto_oculto2">
               <p>No more than 2GB. All files in your account must fit your allotted storage space.</p> 
             </div>
           </li>
           <!-- tercer elemento -->
           <li>
-            <div class="lista_1_texto_visible">
+            <div id="elemento3" class="lista_1_texto_visible">
 
-              <p class="primer_parrafo">
+              <p id="parrafo3" class="primer_parrafo">
                 How do I reset my password?
               </p>
-              <img class="flechita" src="./images/icon-arrow-down.svg" alt="flechita">
+              <img id="flechita3" class="flechita flecha" src="./images/icon-arrow-down.svg" alt="flechita">
             </div>
             
-            <div class="texto_oculto">
+            <div class="texto_oculto texto_oculto3">
               <p>Click “Forgot password” from the login page or “Change password” from your profile page.
                 A reset link will be emailed to you.</p>
             </div>
           </li>
           <!-- cuarto elemento -->
           <li>
-            <div class="lista_1_texto_visible">
+            <div id="elemento4" class="lista_1_texto_visible">
               
-              <p class="primer_parrafo">
+              <p id="parrafo4" class="primer_parrafo">
                 Can I cancel my subscription?
               </p>
-              <img class="flechita" src="./images/icon-arrow-down.svg" alt="flechita">
+              <img id="flechita4" class="flechita flecha" src="./images/icon-arrow-down.svg" alt="flechita">
             </div>
             
-            <div class="texto_oculto">
+            <div class="texto_oculto texto_oculto4">
               <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
             </div>
           </li>
           <!-- quinto elemento -->
           <li>
-            <div class="lista_1_texto_visible">
+            <div id="elemento5" class="lista_1_texto_visible">
               
-              <p class="primer_parrafo">Do you provide additional support?</p>
-              <img class="flechita" src="./images/icon-arrow-down.svg" alt="flechita">
+              <p id="parrafo5" class="primer_parrafo">Do you provide additional support?</p>
+              <img id="flechita5" class="flechita flecha" src="./images/icon-arrow-down.svg" alt="flechita">
             </div>
             
-            <div class="texto_oculto">
+            <div class="texto_oculto texto_oculto5">
               <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
             </div>
           </li>
@@ -94,5 +95,6 @@
 
   </main>
 
+<script src="./app.js"></script>
 </body>
 </html>

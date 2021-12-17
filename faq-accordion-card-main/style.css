@@ -23,7 +23,7 @@
 }
 
 body {
-    background: linear-gradient(0deg, var(--Soft-blue), var(--Soft-violet));
+    background: linear-gradient(0deg, hsla(240, 73%, 65%, 0.884), hsla(273, 75%, 66%, 0.918));
     height: 100vh;
     display: flex;
     align-items: center;
@@ -81,6 +81,7 @@ main{
     margin-top:130px;
     line-height: 20px;
     width: 80%;
+    /* overflow: hidden; */
     
     
 }
@@ -96,6 +97,7 @@ main{
 
 .lista_1{
     font-weight: 400;
+    
 }
 
 
@@ -105,6 +107,11 @@ li{
     padding-bottom: 1em;
     border-bottom: 1px solid var(--Light-grayish-blue);
     margin-bottom: 1em;
+}
+
+.lista_1_texto_visible:hover{
+    color: var(--Soft-red);
+    cursor: pointer;
 }
 
 
@@ -126,14 +133,57 @@ li img{
 }
 
 
-
-
-
-
-
-.attribution {
-    font-size: 11px; text-align: center; 
+.flechita.rotada{
+    transform: rotate(180deg);
 }
-.attribution a {
-    color: hsl(228, 45%, 44%); 
+
+
+@media only screen and (min-width:1400px){
+
+    main{
+        width: 65%;
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+    }
+
+    .section_1{
+        width: 35%;
+        margin-right: 100px;
+        margin-left: auto;
+        height: 100%;
+        margin-top: 150px;
+                
+    }
+
+    .section_1 h1{
+        text-align: left;
+        font-size: 2.5rem;
+        margin-bottom: 1.2em;
+    }
+
+    .img_principal{
+        display: none;
+    }
+
+    main{
+        background-image: url(./images/illustration-woman-online-desktop.svg), url(./images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-size: 480px, 1000px;
+        background-position-x: -80px, -600px;
+        background-position-y: 80px, -300px;
+    }
+    
+
+    .lista_1_texto_visible{
+        font-size: 1rem;
+    }
+
+    li{
+        margin-bottom: 2em;
+    }
+
+    .flechita.rotada{
+        transform: rotate(180deg);
+    }
 }
