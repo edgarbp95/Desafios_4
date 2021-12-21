@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+:root{
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Light-Grayish-Blue);
+}
+
+.section_1 img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+main{
+    width: 90%;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.section_1{
+    overflow: hidden;
+    height: 220px;
+}
+
+.section_2{
+    margin: 35px;
+}
+
+h2{
+    font-size: 1rem;
+    color: var(--Very-Dark-Grayish-Blue);
+    font-weight: 700;
+    margin-bottom: 1em;
+    line-height: 25px;
+}
+
+.section_2 p{
+    font-size: 0.85rem;
+    color: var(--Desaturated-Dark-Blue);
+    line-height: 20px;
+}
+
+
+.foto_perfil{
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    margin-top: -5px;
+}
+
+h3{
+    font-size: 0.85rem;
+    color: var(--Very-Dark-Grayish-Blue);
+    padding-bottom: 0.2em;
+}
+
+.section_3 p{
+    color: var(--Grayish-Blue);
+    /* font-size: 0.8rem; */
+}
+
+.section_3_info{
+    margin-left: 10px;
+}
+
+.date{
+    font-size: 0.8rem;
+}
+
+.section_3_icon{
+    width: 35px;
+    height: 35px;
+    background-color: var(--Light-Grayish-Blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.icon_share{
+    
+    /* padding:10px; */
+    /* width: 35px; */
+    height: 16px;
+    position: relative;
+    border-radius: 50%;    
+}
+
+.section_3_inactive{
+    display: flex;
+    /* width: 100%; */
+    margin-left: 30px;
+    margin-right: 30px;
+    gap: 0.5em;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 1.3em;
+  
+}
+
+.mobile_share{
+    background-color: var(--Very-Dark-Grayish-Blue);
+    display: flex;
+    gap: 1em;
+    height: 60px;
+    border-radius: 0 0 10px 10px;
+    align-items: center;
+    padding: 10px 25px 10px 25px;
+    margin-top: -70px;
+    position: relative;
+    z-index: 1;
+    display: none;
+    margin-left: 0pxz;
+    margin-right: 0px;
+}
+
+.mobile_share_icon{
+    height: 35px;
+    width: 35px;
+    background-color: var(--Desaturated-Dark-Blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.icon_share_mobile{
+    /* padding:10px; */
+    /* width: 35px; */
+    height: 15px;
+    position: relative;
+    border-radius: 50%;
+    filter: brightness(3);
+}
+
+.text_share {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 0.8rem;
+    color: var(--Grayish-Blue);
+    /* font-weight: 500; */
+    font-size: 0.8rem;
+    
+}
+
+.section_3_icons{
+    display: flex;
+    gap: 1em;
+}
+
+.section_3_icons img{
+    width: 100%;
+}
+
+@media only screen and (min-width:850px){
+
+    .container{
+        display: flex;
+        height: 280px;
+        width:790px;
+    }
+
+    .section_1 img{
+        display: none;
+    }
+
+    .section_1{
+        width: 90%;
+        height: 100%;
+        background-image: url(./images/drawers.jpg);
+        background-repeat: no-repeat;
+        background-size: 380px;
+    }
+
+    h2{
+        font-size: 1.3rem;
+    }
+
+    .container_2{
+        margin-left:1em;
+        margin-right: 1em;
+    }
+
+    .section_2 p{
+        font-size: 0.8rem;
+        margin-top: -10px;
+    }
+
+    .section_3{
+        margin-top: -10px;
+    }
+
+    .section_3_icon:hover{
+        background-color: var(--Very-Dark-Grayish-Blue);
+        cursor: pointer;
+        
+    }
+
+    .section_3_icon:hover img{
+        filter: brightness(4);
+    }
+
+    .desktop_share{
+        background-color: var(--Very-Dark-Grayish-Blue);
+        /* background-color: red; */
+        display: flex;
+        padding:0.5em;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 250px;
+        border-radius: 15px;
+        gap: 1.5em;
+        
+        
+    }
+
+    .flechita{
+        width: 20px;
+        height: 20px;
+        transform: rotate(45deg);
+        background-color: var(--Very-Dark-Grayish-Blue);
+        margin-top: 47px;
+        position: absolute;
+        /* right: 100px; */
+    }
+    
+    /*.text_share{
+        margin-left: 40px; 
+    }
+    */
+}

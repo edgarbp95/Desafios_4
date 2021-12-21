@@ -137,6 +137,10 @@ li img{
     transform: rotate(180deg);
 }
 
+.img-cubito{
+    display: none;
+}
+
 
 @media only screen and (min-width:1400px){
 
@@ -185,5 +189,12 @@ li img{
 
     .flechita.rotada{
         transform: rotate(180deg);
+    }
+
+    .img-cubito {
+        position: relative;
+        right:93px;
+        top: 35px;
+        display: flex;
     }
 }

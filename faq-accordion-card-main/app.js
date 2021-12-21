@@ -4,11 +4,12 @@ let estado3 = false;
 let estado4 = false;
 let estado5 = false;
 
-$(document).ready(function(){
-    
-    
+// $(document).ready(function(){
+        
+    // $("#elemento1").on('click', function(){
 
-    $("#elemento1").on('click', function(){
+    document.getElementById("elemento1").addEventListener("click", function(){
+ 
         $('.texto_oculto1').slideToggle();
         if(estado==false){
             document.getElementById('flechita').classList.add('rotada');
@@ -39,7 +40,8 @@ $(document).ready(function(){
         }
         
     })
-});
+    
+// });
 
 $(document).ready(function(){
     
