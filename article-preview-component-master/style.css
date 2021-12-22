@@ -129,7 +129,7 @@ h3{
     position: relative;
     z-index: 1;
     display: none;
-    margin-left: 0pxz;
+    margin-left: 0px;
     margin-right: 0px;
 }
 
@@ -171,6 +171,10 @@ h3{
 
 .section_3_icons img{
     width: 100%;
+}
+
+.desktop_share{
+    display: none;
 }
 
 @media only screen and (min-width:850px){
@@ -224,7 +228,7 @@ h3{
     .desktop_share{
         background-color: var(--Very-Dark-Grayish-Blue);
         /* background-color: red; */
-        display: flex;
+        /* display: flex; */
         padding:0.5em;
         align-items: center;
         justify-content: center;
@@ -232,7 +236,11 @@ h3{
         width: 250px;
         border-radius: 15px;
         gap: 1.5em;
-        
+        margin-top: -130px;
+        margin-left: auto;
+        margin-right: -78px;
+        position: relative;
+        /* display: none; */
         
     }
 
